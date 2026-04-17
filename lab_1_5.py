@@ -83,6 +83,11 @@ def complete(number: int):
         print("Успішно виконано!")
 
 @typer_app.command()
+def data():
+       now = time.strftime("%Y %B %d - %H:%M:%S")
+       print(now)
+
+@typer_app.command()
 def results():
          functions_1_5.show_results()
 
