@@ -82,7 +82,11 @@ def click_complete(number):
 def click_results():
        functions_lab1_4.show_results()
        print("Успішно виконано!")
-       
+
+@click_cli.command("data")
+def click_date():
+        now = time.strftime("%Y %B %d - %H:%M:%S")
+        print(now)
 
 @click_cli.command("repl")
 def click_repl():
